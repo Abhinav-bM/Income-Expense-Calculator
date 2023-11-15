@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Income expense calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="div-heading">
+        <h1>Income Expense Calculator</h1>
+    </div>
+
+    <div class="main-div">
+
+        <div class="sec-1">
+            
+            <div class="form">
+
+                <h2>Enter Income</h2>
+
+                <input type="number" id="incomeAmount" placeholder="Enter amount">
+
+                <input type="text" id="incomeCategory" placeholder="Enter category">
+
+                <button onclick="addIncome()">Add Income</button>
+
+                <h2>Enter Expense</h2>
+                <input type="number" id="expenseAmount" placeholder="Enter amount">
+
+                <input type="text" id="expensecategory" placeholder="Enter category">
+
+                <button onclick="addExpense()">Add Expense</button>
+
+            </div>
+
+        </div>
+
+        <div class="sec-2">
+
+            <div class="tables">
+                <h2>Income</h2>
+                <table id="incomeTable">
+                    <tr></tr>
+                </table>
+            </div>
+
+            <div class="tables">
+                <h2>Expenses</h2>
+                <table id="expenseTable"></table>
+            </div>
+
+        </div>
+
+        <div class="sec-3">
+
+            <h2>Summary</h2>
+
+            <div class="summary">
+                <canvas id="summaryChart" width="400" height="400"></canvas>
+            </div>
+            
+        </div>
+
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="calc.js"></script>
+</body>
+</html>

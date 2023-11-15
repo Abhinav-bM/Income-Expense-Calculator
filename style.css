@@ -1,0 +1,44 @@
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.div-heading{
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 50px;
+}
+.main-div{
+    display: flex;
+    justify-content: space-between;
+}
+.sec-1{
+    padding: 0px 20px;
+    border: 4px solid beige;
+}
+.sec-2{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px;
+    width: 500px;
+
+}
+.tables{
+    width: 240px;
+    border: 4px solid beige;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sec-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 4px solid beige;
+}
+.sec-3 h2{
+    
+}
+.table-data {
+    padding-right: 10px; /* Adjust this value to increase or decrease the space */
+    padding-bottom: 20px;
+}
