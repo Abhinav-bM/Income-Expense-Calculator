@@ -45,7 +45,7 @@ function addExpense() {
 // Form validation
 function validateInput(amount, category, amountInput, categoryInput) {
     const amountRegex = /^\d+(\.\d+)?$/;
-    const categoryRegex = /\S/;
+    const categoryRegex =/^[A-Za-z]+$/;
 
     
     removeValidationStyles(amountInput);
