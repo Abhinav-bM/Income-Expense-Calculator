@@ -96,12 +96,11 @@ function updateExpenseTable(){
 
 
 // Table update
-
 function tableUpdate(table, data){
 
     // clear the table
-
     table.innerHTML = '';
+
 
     data.forEach(function (item, index){
 
@@ -117,9 +116,9 @@ function tableUpdate(table, data){
         deleteButton.textContent = "Remove";
         deleteButton.addEventListener("click", function(){
                 
-                data.splice(index, 1);
-                tableUpdate(table, data);
-                SummaryChart();
+            data.splice(index, 1);
+            tableUpdate(table, data);
+            SummaryChart();
         });
 
         const tableDelete = document.createElement("td");
@@ -136,6 +135,7 @@ function tableUpdate(table, data){
 }
 
 
+// chart Update
 function SummaryChart ( ){
     const incomeTotal = calculateTotal(incomeData);
     const expenseTotal = calculateTotal(expenseData);
