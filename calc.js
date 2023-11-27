@@ -66,6 +66,7 @@ function validateInput(amount, category, amountInput, categoryInput) {
     return true;
 }
 
+
 function applyValidationStyles(inputElement) {
     inputElement.style.borderColor = "red";
 }
