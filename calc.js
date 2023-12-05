@@ -42,6 +42,7 @@ function addExpense() {
     }
 }
 
+
 // Form validation
 function validateInput(amount, category, amountInput, categoryInput) {
     const amountRegex = /^\d+(\.\d+)?$/;
@@ -51,7 +52,7 @@ function validateInput(amount, category, amountInput, categoryInput) {
     removeValidationStyles(amountInput);
     removeValidationStyles(categoryInput);
 
-    
+                                                                                // .test to check the input matches the regularExp pattern
     if (!amountRegex.test(amount) || parseFloat(amount) <= 0) {
         applyValidationStyles(amountInput);
         return false;
@@ -117,7 +118,7 @@ function tableUpdate(table, data){
         deleteButton.addEventListener("click", function(){
                 
             data.splice(index, 1);
-            tableUpdate(table, data);
+            tableUpdate(table, data);  //recursive function
             SummaryChart();
         });
 
